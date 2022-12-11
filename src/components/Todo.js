@@ -31,11 +31,11 @@ const submitUpdate = value => {
         <div className='icons'>
             <RiCloseCircleLine
             onClick={() => removeTodo(todo.id)}
-            className= 'delete_icon'
+            className= 'delete-icon'
             />
             <TiEdit 
             onClick={() => setEdit({id:todo.id, value:todo.text})}
-            className= 'edit_icon'
+            className= 'edit-con'
             />
 
         </div>
