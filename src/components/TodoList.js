@@ -49,7 +49,7 @@ const completeTodo = id => {
     <div>
         <h1>To Do List</h1>
         <TodoForm onSubmit={addTodo} />
-        <Todo todos={todos} completeTodos={completeTodo} removeTodo ={removeTodo} updateTodo={updateTodo} />
+        <Todo todos={todos} completeTodo={completeTodo} removeTodo ={removeTodo} updateTodo={updateTodo} />
     </div> 
   )
 }

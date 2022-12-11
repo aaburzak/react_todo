@@ -21,11 +21,16 @@ const submitUpdate = value => {
     if (edit.id) {
         return <TodoForm edit={edit} onSubmit={submitUpdate} />
     }
-  return todos.map((todo, index) => (
+
+    return todos.map((todo, index) => (
     // changes background toggles if complete or not
-    <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-    
-        <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+    <div 
+        className={todo.isComplete ? 
+        'todo-row complete' : 'todo-row'} 
+        key={index}
+    >
+        <div key={todo.id} onClick={() => 
+            completeTodo(todo.id)}>
             {todo.text}
         </div>
         <div className='icons'>
